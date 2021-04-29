@@ -424,7 +424,7 @@ a {
 
 .globe .bird .body .feet:before{
 
-    animation: stomp 1s infinite;
+    animation: stomp 1.5s infinite;
 
 }
 
@@ -434,8 +434,8 @@ a {
 
 }
 
-.globe .bird .body .cloud:before, 
-.globe .bird .body .cloud:after{
+.globe .cloud,
+.globe .cloud.small{
 
     animation: fly 5s infinite;
 
@@ -503,10 +503,10 @@ a {
 
 @keyframes fly {
     
-    0% { margin-left: 0;}
+    0% { left: -300px;}
 
-    50% { margin-left: 100px;}
+    50% { left: 0px;}
 
-    0% { margin-left: 0;}
+    100% { margin-left: 300px;}
 
 }
